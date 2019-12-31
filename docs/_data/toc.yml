@@ -1,0 +1,98 @@
+# This file contains the order and numbering for all sections in the book.
+#
+# Each entry has the following schema:
+#
+# - title: mytitle   # Title of chapter or section
+#   url: /myurl  # URL of section relative to the /content/ folder.
+#   sections:  # Contains a list of more entries that make up the chapter's sections
+#   not_numbered: true  # if the section shouldn't have a number in the sidebar
+#     (e.g. Introduction or appendices)
+#   expand_sections: true  # if you'd like the sections of this chapter to always
+#     be expanded in the sidebar.
+#   external: true  # Whether the URL is an external link or points to content in the book
+#
+# Below are some special values that trigger specific behavior:
+# - search: true  # Will provide a link to a search page
+# - divider: true  # Will insert a divider in the sidebar
+# - header: My Header  # Will insert a header with no link in the sidebar
+
+
+- url: /intro
+  not_numbered: true
+
+# - divider: true
+# - header: Demo Drawing
+- url: /draw/draw
+  not_numbered: true
+  expand_sections: true
+  sections:
+  - url: /draw/dash_notes
+  - url: /draw/draw
+
+ 
+- url: /euler/euler
+  not_numbered: true
+
+
+# - url: /contributing
+
+# - url: /guide/01_overview
+#   not_numbered: true
+#   expand_sections: true
+#   sections:
+#   - url: /guide/01-5_tour
+#   - url: /guide/02_create
+#   - url: /guide/03_build
+#   - url: /guide/04_publish
+#     expand_subsections: false
+#     subsections:
+#     - url: /guide/publish/book-html
+#       not_numbered: true
+#     - url: /guide/publish/github-pages
+#       not_numbered: true
+#     - url: /guide/publish/netlify
+#       not_numbered: true
+
+#   - url: /guide/05_faq
+#   - url: /guide/06_advanced
+
+# - url: /features/features
+#   not_numbered: true
+#   expand_sections: true
+#   sections:
+#   - url: /features/markdown
+#     not_numbered: true
+#   - url: /features/notebooks
+#     not_numbered: true
+#   - url: /features/beta
+#     subsections:
+#     - url: /features/interactive_cells
+#       not_numbered: true
+#     - url: /features/math
+#       not_numbered: true
+
+
+# - url: /advanced/advanced
+#   not_numbered: true
+#   expand_sections: true
+#   sections:
+#   - url: /advanced/circleci
+#     not_numbered: true
+
+
+# - url: https://github.com/jupyter/jupyter-book
+#   title: GitHub repository
+#   external: true
+#   not_numbered: true
+
+# - url: /contributing
+#   not_numbered: true
+
+# - divider: true
+# - header: Demo textbook
+
+# - url: /01/what-is-data-science
+#   sections:
+#   - url: /01/1/intro
+#     subsections:
+#     - url: /01/3/subsection/subsections
