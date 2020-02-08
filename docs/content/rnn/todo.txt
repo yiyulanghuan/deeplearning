@@ -1,0 +1,1 @@
+https://github.com/buomsoo-kim/PyTorch-learners-tutorial/blob/master/PyTorch%20Basics/pytorch-model-basics-4%20%5BRNN%5D.ipynb
